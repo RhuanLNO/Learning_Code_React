@@ -1,11 +1,14 @@
 import { CustomForm } from './components/FormInputs';
-import { Header, Footer} from './components/FormComponents';
+import { Header, Footer } from './components/FormComponents';
+import { UserTable } from './components/UserTable';
+
+const showTable = false;
 
 const App = () => {
   return (
     <>
       <Header />
-      <CustomForm /> 
+      {showTable ? <UserTable /> : <CustomForm />}      
       <Footer />
     </>
   );  
