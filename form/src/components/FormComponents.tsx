@@ -1,10 +1,19 @@
-import { Typography, AppBar, Toolbar } from "@mui/material";
+import { Typography, AppBar, Toolbar, Box } from "@mui/material";
 
 const Header = () => {
   return(
-    <AppBar position="static">
+    <AppBar position="static" color="default">
       <Toolbar variant="regular">
-        <Typography variant="h5" align="center">HRM</Typography>
+        <Box
+          component="img"
+          sx={{
+          height: 50,
+          width: 120,
+          margin: 1
+          }}
+          alt="HRM Logo"
+          src={'dist/assets/HRM_logo.png'}
+        />
         <Typography align="center">Adicionar novo paciente</Typography>
       </Toolbar>
     </AppBar>
